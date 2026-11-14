@@ -1,0 +1,14 @@
+{
+  "intercepto": 21.51964453823132,
+  "coeficientes": [
+    2.7742350957517043,
+    0.10728632335623635,
+    26.441864153782838
+  ],
+  "columnas": [
+    "distancia_km",
+    "carga_kg",
+    "via_no_asfaltada"
+  ],
+  "objetivo": "costo_transporte_soles"
+}

@@ -1,0 +1,15 @@
+MODELO ENTRENADO POR EL ESTUDIANTE
+
+Clases que debes crear en Teachable Machine: Verde, Amarilla, Seca.
+
+1. Entra a https://teachablemachine.withgoogle.com/
+2. Get Started -> Image Project -> Standard image model.
+3. Coloca fotos reales y variadas en cada clase y pulsa Train Model.
+4. Export Model -> TensorFlow -> Keras -> Download my model.
+5. Extrae el ZIP y coloca en ESTA carpeta:
+       keras_model.h5
+       labels.txt
+6. Si se descarga como keras_Model.h5, renómbralo a keras_model.h5.
+
+No modifiques el orden de las clases ni el contenido de labels.txt.
+NO se incluye un modelo de ejemplo inventado: el estudiante debe entrenarlo.

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: senati-actividades-lorena-2026
+    runtime: python
+    plan: free
+    buildCommand: bash Sitio_SENATI/build.sh
+    startCommand: gunicorn Sitio_SENATI.app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+    healthCheckPath: /health

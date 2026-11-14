@@ -1,0 +1,1 @@
+"""Portal web de actividades SENATI 2026."""
