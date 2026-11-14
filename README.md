@@ -20,18 +20,16 @@ Se inspeccionaron **12 archivos RAR y 2 PDF** entregados por el estudiante, incl
 
 Todos los **17 cuadernos** tienen el **nombre original** y un bloque **amarillo** de inicio del desarrollo justo junto al enunciado; las respuestas cortas se leen junto a las preguntas originales. También se completaron 73 preguntas dentro de los archivos `.md` originales. Las imágenes en cuadernos incluyen logo SENATI cuando estaba disponible en el material; las webs llevan su logo institucional. No se han generado capturas ficticias, resultados de Teachable Machine ni historial GitHub.
 
-## Repositorio GitHub propuesto
+## Repositorio GitHub publicado
 
-**Nombre exacto para crear:** `Actividades-SENATI-Personal-y-Grupal-2026`
+**Repositorio oficial:** https://github.com/Loren07-kie/Actividades-SENATI-Personal-y-Grupal-2026-Copiar
 
-**Descripción para copiar:** Actividades personales y grupales SENATI 2026: Python, regresión ML, aprendizaje no supervisado, visión computacional, JavaScript, Git/GitHub y Teachable Machine, con cuadernos Jupyter originales documentados y aplicaciones web.
+Este repositorio contiene 17 cuadernos Jupyter originales, material personal y grupal y recursos de las aplicaciones. Los bloques amarillos se encuentran en el lugar donde se desarrolla cada actividad; las respuestas cortas aparecen junto a las preguntas.
 
-Crear como **público**, preferiblemente sin archivos iniciales porque este paquete ya incluye README. Los nombres de las carpetas de cada actividad se conservan. Comparte la URL del repositorio para preparar la publicación.
+## Portal web en Render
 
-## Render
+**URL pública:** https://senati-actividades-lorena-2026.onrender.com
 
-Se incluye `render.yaml` de referencia para aplicaciones que disponen de código, CSV y modelo guardado: 2 proyectos de regresión, 4 de no supervisado y 2 webs estáticas de JavaScript. Se recomienda desplegar **solo las actividades que te hayan solicitado**, para evitar crear muchos servicios. `rootDir` de cada servicio apunta a la carpeta de su aplicación. Teachable Machine no se incluye en despliegue hasta entrenar con fotos propias y exportar los modelos de TensorFlow / Keras.
+El portal usa un solo servicio Python en Render: monta seis aplicaciones de datos (dos regresiones y cuatro retos de aprendizaje no supervisado), muestra dos páginas JavaScript y enlaza los cuadernos. En el build, `bash Sitio_SENATI/build.sh` instala las dependencias y entrena los cuatro modelos no supervisados a partir de los CSV originales. Arranca con `gunicorn Sitio_SENATI.app:app --bind 0.0.0.0:$PORT`.
 
-**No se ha subido contenido a GitHub o Render.** Las apps Flask no se han arrancado en este entorno porque Flask no está instalado aquí; los notebooks de datos y visión computacional sí han sido ejecutados y guardados con resultados. Los comandos de arranque se deben comprobar en el servicio real.
-
-Para utilizar un cuaderno, abre su carpeta en VS Code/Jupyter y el notebook del **mismo nombre que indica el material**. Para Flask, instala `requirements.txt` y ejecuta `python app.py` o `gunicorn app:app` en hosting.
+**Comprobación al 14/11/2026:** Render informó el despliegue como `live` y registró HTTP 200 para la página principal. Esto no sustituye pruebas de usuario de cada formulario. Los tres casos de Teachable Machine siguen pendientes de fotografías y modelos entrenados reales.

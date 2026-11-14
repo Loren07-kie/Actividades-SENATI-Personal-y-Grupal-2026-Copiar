@@ -7,4 +7,4 @@
 - Se conservaron las ejecuciones y salidas previamente generadas en los notebooks.
 - La práctica de Computadora 1 y 2 **no se repite**: solo un documento Word con la documentación, sin inventar capturas o PR.
 - Los modelos visuales de Teachable Machine continúan pendientes de fotos, entrenamiento y pruebas reales.
-- No se ha publicado ni desplegado en GitHub o Render.
+- GitHub: https://github.com/Loren07-kie/Actividades-SENATI-Personal-y-Grupal-2026-Copiar; Render: https://senati-actividades-lorena-2026.onrender.com (despliegue `live` reportado por Render).
